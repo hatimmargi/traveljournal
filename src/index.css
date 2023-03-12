@@ -1,13 +1,91 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  --primary-color: #F55A5A;
+  --accent-color: #2B283A;
+  ;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: Inter, sans-serif;
+color: var(--accent-color);
+}
+.App {
+  margin: 0 auto;
+}
+header {
+  background-color: var(--primary-color) ;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  gap: 1em;
+  text-align: center;
+  padding: 2em 4em;
+}
+.cards--list {
+  margin: 4em 1em;
+  display: grid;
+  place-content: center;
+}
+.card {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  height: 250px;
+  max-width: 470px;
+}
+.card--img {
+  height: 168px;
+width: 125px;
+border-radius: 5px;
+
+  overflow: hidden;
+  object-fit: cover;
+}
+.card--info {
+  display: flex;
+  font-size: 10.24px;
+  align-items: center;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.card--info img {
+  margin-right: 4px;
+}
+.card--link {
+  letter-spacing: normal;
+  text-transform: capitalize;
+  color: #918E9B;
+  font-family: Inter;
+font-size: 10px;
+font-weight: 400;
+margin-left: 12px
+  ;
+}
+.card--title {
+  margin-top: 4px;
+  font-family: Inter;
+font-size: 25px;
+font-weight: 700;
+letter-spacing: 0em;
+
+}
+.card--date {
+  font-size: 10.24px;
+  margin-top: 7px;
+  font-weight: 700;
+}
+.card--description {
+  margin-top: 9px;
+font-size: 10px;
+font-weight: 400;
+line-height: 15px;
+
 }
